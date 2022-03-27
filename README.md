@@ -157,7 +157,7 @@ Si necesita ayuda, no dude en unirse a la [comunidad de Discord](https://discord
 <details>
 <summary>العربية</summary>
 
-### الضرب والقسمة باستخدام معاملات Bitwise
+### الضرب والقسمة مع معاملات Bitwise
 
 يرجى الانتهاء من طرق `multiplyBy31()` و `divideBy2ThenMinus1()` في [src / main / java / com / bytelegend / Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`.
 
@@ -176,7 +176,7 @@ Si necesita ayuda, no dude en unirse a la [comunidad de Discord](https://discord
         -   إذا كنت لا تعرف كيف يمكنك النقر فوق [استيراد مشروع إلى IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import.md) / [استيراد مشروع إلى VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import-vscode.md) .
         -   قبل إرسال التعليمات البرمجية الخاصة بك ، من الأفضل تشغيل `mvn verify` محليًا لتوفير الوقت. لا أعرف كيف؟ انظر [التحقق محليًا في IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-idea.md) / [تحقق محليًا في VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-vscode.md) .
     -   غير موصى به على الإطلاق: يمكنك [النقر هنا لتنزيل رمز مضغوط](https://codeload.github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/zip/refs/heads/main) إذا كنت لا تحب عمليات `git` .
-    -   أو: إذا كنت واثقًا بدرجة كافية من كتابة التعليمات البرمجية في محرر الويب مباشرةً ، فابدأ.
+    -   أو: إذا كنت واثقًا بدرجة كافية لكتابة التعليمات البرمجية في محرر الويب مباشرةً ، فابدأ.
     -   أو: إذا كنت معتادًا على GitHub ، فيمكنك تفرع [الريبو](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators) وإنهاء التحدي وإنشاء طلب سحب.
 -   سيتحقق الروبوت من العلاقات العامة الخاصة بك ويخبرك إذا أنجزت التحدي.
 -   ارجع إلى [ByteLegend وتابع](https://bytelegend.com) رحلة بطلك.
@@ -197,7 +197,7 @@ Si necesita ayuda, no dude en unirse a la [comunidad de Discord](https://discord
 
 Por favor, termine os métodos `multiplyBy31()` e `divideBy2ThenMinus1()` em [src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`.
 
-`multiplyBy31Description(int n)` retorna o resultado de um dado inteiro multiplicado por 31, por exemplo, `n=1` , return `31` ; `n=2` , retorne `62` . Não há necessidade de considerar o problema de estouro. Observe que você não tem permissão para usar o sinal de multiplicação ( `*` ), o sinal de divisão ( `/` ) e o sinal de adição ( `+` ).
+`multiplyBy31Description(int n)` retorna o resultado de um dado inteiro multiplicado por 31, ex. `n=1` , return `31` ; `n=2` , retorne `62` . Não há necessidade de considerar o problema de estouro. Observe que você não tem permissão para usar o sinal de multiplicação ( `*` ), o sinal de divisão ( `/` ) e o sinal de adição ( `+` ).
 
 `divideBy2ThenMinus1(int n)` retorna o resultado de um determinado inteiro dividido por 2 e menos 1.
 
@@ -209,11 +209,11 @@ Observe que você não tem permissão para usar o sinal de multiplicação ( `*`
 
 -   Você pode realizar este desafio de qualquer maneira abaixo:
     -   Recomendado para iniciantes: execute `git clone https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators` para baixar o código, termine o desafio em seu IDE local e copie/cole/envie a resposta em editor web.
-        -   Se você não sabe como, você pode clicar em [import project into IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import.md) / [import project into VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import-vscode.md) .
+        -   Se você não sabe como, você pode clicar em [importar projeto para IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import.md) / [importar projeto para VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import-vscode.md) .
         -   Antes de enviar seu código, é melhor você executar `mvn verify` localmente para economizar tempo. Não sei como? Consulte [verificar localmente em IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-idea.md) / [verificar localmente em VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-vscode.md) .
     -   Muito não recomendado: você pode [clicar aqui para baixar o código zipado](https://codeload.github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/zip/refs/heads/main) se não gostar das operações do `git` .
-    -   Ou: se você estiver confiante o suficiente para escrever código diretamente no editor da web, vá em frente.
-    -   Ou: se você estiver familiarizado com o GitHub, você pode fazer o fork [do repo](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators) , finalizar o desafio e criar uma pull request.
+    -   Ou: se você estiver confiante o suficiente para escrever código diretamente no editor web, vá em frente.
+    -   Ou: se você estiver familiarizado com o GitHub, você pode bifurcar [o repo](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators) , finalizar o desafio e criar um pull request.
 -   O bot verificará seu PR e informará se você cumprir o desafio.
 -   Volte para [ByteLegend](https://bytelegend.com) e continue sua jornada de herói.
 
@@ -271,7 +271,7 @@ Veuillez terminer les méthodes `multiplyBy31()` et `divideBy2ThenMinus1()` dans
 
 `multiplyBy31Description(int n)` renvoie le résultat d'un entier donné multiplié par 31, par exemple `n=1` , return `31` ; `n=2` , retour `62` . Pas besoin de considérer le problème de débordement. Notez que vous n'êtes pas autorisé à utiliser le signe de multiplication ( `*` ), le signe de division ( `/` ) et le signe d'addition ( `+` ).
 
-`divideBy2ThenMinus1(int n)` renvoie le résultat d'un entier donné divisé par 2, puis moins 1.
+`divideBy2ThenMinus1(int n)` renvoie le résultat d'un nombre entier donné divisé par 2, puis moins 1.
 
 Par exemple, `n=1` , renvoie `-1` , car `1/2=0` , `0-1=-1` .
 
@@ -393,7 +393,7 @@ Beachten Sie, dass Sie kein Multiplikationszeichen ( `*` ), Divisionszeichen ( `
         -   Bevor Sie Ihren Code einreichen, sollten Sie `mvn verify` besser lokal ausführen, um Zeit zu sparen. Sie wissen nicht wie? Siehe [Lokal verifizieren in IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-idea.md) / [Lokal verifizieren in VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-vscode.md) .
     -   Sehr nicht zu empfehlen: Sie können [hier klicken, um den gezippten Code herunterzuladen,](https://codeload.github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/zip/refs/heads/main) wenn Sie `git` -Operationen nicht mögen.
     -   Oder: Wenn Sie sicher genug sind, Code direkt im Web-Editor zu schreiben, fahren Sie fort.
-    -   Oder: Wenn Sie mit GitHub vertraut sind, können Sie [das Repo forken](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators) , die Challenge beenden und einen Pull-Request erstellen.
+    -   Oder: Wenn Sie sich mit GitHub auskennen, können Sie [das Repo forken](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators) , die Challenge beenden und einen Pull-Request erstellen.
 -   Der Bot überprüft Ihre PR und teilt Ihnen mit, ob Sie die Herausforderung meistern.
 -   Gehen Sie zurück zu [ByteLegend](https://bytelegend.com) und setzen Sie Ihre Heldenreise fort.
 
