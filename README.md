@@ -1,9 +1,9 @@
-## [ByteLegend](https://bytelegend.com) Challenge of JavaIsland: Calculation and Operators
+# [ByteLegend](https://bytelegend.com) Challenge of JavaIsland: Calculation and Operators
 
 <details open='true'>
 <summary>English</summary>
 
-### Multiplication and Division with Bitwise Operators
+## Multiplication and Division with Bitwise Operators
 
 Please finish `multiplyBy31()` and `divideBy2ThenMinus1()` methods in [src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java)`.
 
@@ -45,7 +45,7 @@ Any changes to files other than the following files will be rejected:**
 <details>
 <summary>简体中文</summary>
 
-### 使用位运算完成乘法和除法
+## 使用位运算完成乘法和除法
 
 请完成[src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java)的`multiplyBy31()`方法和`divideBy2ThenMinus1()`方法。
 
@@ -85,7 +85,8 @@ Any changes to files other than the following files will be rejected:**
 <details>
 <summary>繁體中文</summary>
 
-### 位運算符的乘法和除法
+位運算符的乘法和除法
+----------
 
 請完成[src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java)中的`multiplyBy31()`和`divideBy2ThenMinus1()`方法。
 
@@ -121,7 +122,8 @@ Any changes to files other than the following files will be rejected:**
 <details>
 <summary>Español</summary>
 
-### Multiplicación y división con operadores bit a bit
+Multiplicación y división con operadores bit a bit
+--------------------------------------------------
 
 Finalice los métodos `multiplyBy31()` `divideBy2ThenMinus1()` en [src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`.
 
@@ -157,7 +159,8 @@ Si necesita ayuda, no dude en unirse a la [comunidad de Discord](https://discord
 <details>
 <summary>العربية</summary>
 
-### الضرب والقسمة مع معاملات Bitwise
+الضرب والقسمة باستخدام معاملات Bitwise
+--------------------------------------
 
 يرجى الانتهاء من طرق `multiplyBy31()` و `divideBy2ThenMinus1()` في [src / main / java / com / bytelegend / Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`.
 
@@ -176,7 +179,7 @@ Si necesita ayuda, no dude en unirse a la [comunidad de Discord](https://discord
         -   إذا كنت لا تعرف كيف يمكنك النقر فوق [استيراد مشروع إلى IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import.md) / [استيراد مشروع إلى VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import-vscode.md) .
         -   قبل إرسال التعليمات البرمجية الخاصة بك ، من الأفضل تشغيل `mvn verify` محليًا لتوفير الوقت. لا أعرف كيف؟ انظر [التحقق محليًا في IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-idea.md) / [تحقق محليًا في VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-vscode.md) .
     -   غير موصى به على الإطلاق: يمكنك [النقر هنا لتنزيل رمز مضغوط](https://codeload.github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/zip/refs/heads/main) إذا كنت لا تحب عمليات `git` .
-    -   أو: إذا كنت واثقًا بدرجة كافية لكتابة التعليمات البرمجية في محرر الويب مباشرةً ، فابدأ.
+    -   أو: إذا كنت واثقًا بدرجة كافية من كتابة التعليمات البرمجية في محرر الويب مباشرةً ، فابدأ.
     -   أو: إذا كنت معتادًا على GitHub ، فيمكنك تفرع [الريبو](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators) وإنهاء التحدي وإنشاء طلب سحب.
 -   سيتحقق الروبوت من العلاقات العامة الخاصة بك ويخبرك إذا أنجزت التحدي.
 -   ارجع إلى [ByteLegend وتابع](https://bytelegend.com) رحلة بطلك.
@@ -193,11 +196,12 @@ Si necesita ayuda, no dude en unirse a la [comunidad de Discord](https://discord
 <details>
 <summary>Português</summary>
 
-### Multiplicação e divisão com operadores bit a bit
+Multiplicação e divisão com operadores bit a bit
+------------------------------------------------
 
 Por favor, termine os métodos `multiplyBy31()` e `divideBy2ThenMinus1()` em [src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`.
 
-`multiplyBy31Description(int n)` retorna o resultado de um dado inteiro multiplicado por 31, ex. `n=1` , return `31` ; `n=2` , retorne `62` . Não há necessidade de considerar o problema de estouro. Observe que você não tem permissão para usar o sinal de multiplicação ( `*` ), o sinal de divisão ( `/` ) e o sinal de adição ( `+` ).
+`multiplyBy31Description(int n)` retorna o resultado de um dado inteiro multiplicado por 31, por exemplo, `n=1` , return `31` ; `n=2` , retorne `62` . Não há necessidade de considerar o problema de estouro. Observe que você não tem permissão para usar o sinal de multiplicação ( `*` ), o sinal de divisão ( `/` ) e o sinal de adição ( `+` ).
 
 `divideBy2ThenMinus1(int n)` retorna o resultado de um determinado inteiro dividido por 2 e menos 1.
 
@@ -209,11 +213,11 @@ Observe que você não tem permissão para usar o sinal de multiplicação ( `*`
 
 -   Você pode realizar este desafio de qualquer maneira abaixo:
     -   Recomendado para iniciantes: execute `git clone https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators` para baixar o código, termine o desafio em seu IDE local e copie/cole/envie a resposta em editor web.
-        -   Se você não sabe como, você pode clicar em [importar projeto para IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import.md) / [importar projeto para VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import-vscode.md) .
+        -   Se você não sabe como, você pode clicar em [import project into IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import.md) / [import project into VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/clone-and-import-vscode.md) .
         -   Antes de enviar seu código, é melhor você executar `mvn verify` localmente para economizar tempo. Não sei como? Consulte [verificar localmente em IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-idea.md) / [verificar localmente em VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-vscode.md) .
     -   Muito não recomendado: você pode [clicar aqui para baixar o código zipado](https://codeload.github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/zip/refs/heads/main) se não gostar das operações do `git` .
-    -   Ou: se você estiver confiante o suficiente para escrever código diretamente no editor web, vá em frente.
-    -   Ou: se você estiver familiarizado com o GitHub, você pode bifurcar [o repo](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators) , finalizar o desafio e criar um pull request.
+    -   Ou: se você estiver confiante o suficiente para escrever código diretamente no editor da web, vá em frente.
+    -   Ou: se você estiver familiarizado com o GitHub, você pode fazer o fork [do repo](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators) , finalizar o desafio e criar uma pull request.
 -   O bot verificará seu PR e informará se você cumprir o desafio.
 -   Volte para [ByteLegend](https://bytelegend.com) e continue sua jornada de herói.
 
@@ -229,13 +233,14 @@ Se precisar de ajuda, sinta-se à vontade para se juntar à [Comunidade Discord]
 <details>
 <summary>Bahasa Indonesia</summary>
 
-### Perkalian dan Pembagian dengan Operator Bitwise
+Perkalian dan Pembagian dengan Operator Bitwise
+-----------------------------------------------
 
 Selesaikan metode `multiplyBy31()` dan `divideBy2ThenMinus1()` di [src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`.
 
 `multiplyBy31Description(int n)` mengembalikan hasil dari bilangan bulat yang diberikan dikalikan dengan 31, misalnya `n=1` , return `31` ; `n=2` , kembalikan `62` . Tidak perlu mempertimbangkan masalah overflow. Perhatikan bahwa Anda tidak diperbolehkan menggunakan tanda perkalian ( `*` ), tanda pembagian ( `/` ), dan tanda penambahan ( `+` ).
 
-`divideBy2ThenMinus1(int n)` mengembalikan hasil bilangan bulat yang diberikan dibagi 2, lalu dikurangi 1.
+`divideBy2ThenMinus1(int n)` mengembalikan hasil dari bilangan bulat yang diberikan dibagi 2, lalu dikurangi 1.
 
 Misalnya, `n=1` , kembalikan `-1` , karena `1/2=0` , `0-1=-1` .
 
@@ -265,13 +270,14 @@ Jika Anda memerlukan bantuan, jangan ragu untuk bergabung dengan [Komunitas Disc
 <details>
 <summary>Français</summary>
 
-### Multiplication et division avec des opérateurs au niveau du bit
+Multiplication et division avec des opérateurs au niveau du bit
+---------------------------------------------------------------
 
 Veuillez terminer les méthodes `multiplyBy31()` et `divideBy2ThenMinus1()` dans [src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`.
 
 `multiplyBy31Description(int n)` renvoie le résultat d'un entier donné multiplié par 31, par exemple `n=1` , return `31` ; `n=2` , retour `62` . Pas besoin de considérer le problème de débordement. Notez que vous n'êtes pas autorisé à utiliser le signe de multiplication ( `*` ), le signe de division ( `/` ) et le signe d'addition ( `+` ).
 
-`divideBy2ThenMinus1(int n)` renvoie le résultat d'un nombre entier donné divisé par 2, puis moins 1.
+`divideBy2ThenMinus1(int n)` renvoie le résultat d'un entier donné divisé par 2, puis moins 1.
 
 Par exemple, `n=1` , renvoie `-1` , car `1/2=0` , `0-1=-1` .
 
@@ -301,7 +307,8 @@ Si vous avez besoin d'aide, n'hésitez pas à rejoindre la [communauté Discord]
 <details>
 <summary>日本語</summary>
 
-### ビット演算子による乗算と除算
+ビット演算子による乗算と除算
+--------------
 
 [src / main / java / com / bytelegend / Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`のmultiplyBy31（）メソッドと`divideBy2ThenMinus1()`メソッドを終了し`multiplyBy31()`ください。
 
@@ -337,7 +344,8 @@ Si vous avez besoin d'aide, n'hésitez pas à rejoindre la [communauté Discord]
 <details>
 <summary>Русский</summary>
 
-### Умножение и деление с побитовыми операторами
+Умножение и деление с побитовыми операторами
+--------------------------------------------
 
 Пожалуйста, завершите методы multipleBy31( `multiplyBy31()` и `divideBy2ThenMinus1()` в [src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`.
 
@@ -373,7 +381,8 @@ Si vous avez besoin d'aide, n'hésitez pas à rejoindre la [communauté Discord]
 <details>
 <summary>Deutsch</summary>
 
-### Multiplikation und Division mit bitweisen Operatoren
+Multiplikation und Division mit bitweisen Operatoren
+----------------------------------------------------
 
 Bitte beenden Sie die Methoden `multiplyBy31()` und `divideBy2ThenMinus1()` in [src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`.
 
@@ -393,7 +402,7 @@ Beachten Sie, dass Sie kein Multiplikationszeichen ( `*` ), Divisionszeichen ( `
         -   Bevor Sie Ihren Code einreichen, sollten Sie `mvn verify` besser lokal ausführen, um Zeit zu sparen. Sie wissen nicht wie? Siehe [Lokal verifizieren in IDEA](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-idea.md) / [Lokal verifizieren in VSCode](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/docs/en/run-mvn-verify-vscode.md) .
     -   Sehr nicht zu empfehlen: Sie können [hier klicken, um den gezippten Code herunterzuladen,](https://codeload.github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/zip/refs/heads/main) wenn Sie `git` -Operationen nicht mögen.
     -   Oder: Wenn Sie sicher genug sind, Code direkt im Web-Editor zu schreiben, fahren Sie fort.
-    -   Oder: Wenn Sie sich mit GitHub auskennen, können Sie [das Repo forken](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators) , die Challenge beenden und einen Pull-Request erstellen.
+    -   Oder: Wenn Sie mit GitHub vertraut sind, können Sie [das Repo forken](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators) , die Challenge beenden und einen Pull-Request erstellen.
 -   Der Bot überprüft Ihre PR und teilt Ihnen mit, ob Sie die Herausforderung meistern.
 -   Gehen Sie zurück zu [ByteLegend](https://bytelegend.com) und setzen Sie Ihre Heldenreise fort.
 
@@ -409,11 +418,12 @@ Wenn Sie Hilfe benötigen, können Sie sich gerne der [Discord Community](https:
 <details>
 <summary>한국어</summary>
 
-### 비트 연산자를 사용한 곱셈과 나눗셈
+비트 연산자를 사용한 곱셈과 나눗셈
+-------------------
 
 [src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`에서 multiBy31( `multiplyBy31()` 및 `divideBy2ThenMinus1()` 메서드를 완료하십시오.
 
-`multiplyBy31Description(int n)` 은 주어진 정수에 31을 곱한 결과를 반환합니다(예: `n=1` , 반환 `31` ; `n=2` , `62` 를 반환합니다. 오버플로 문제를 고려할 필요가 없습니다. 곱하기 기호( `*` ), 나눗셈 기호( `/` ), 더하기 기호( `+` )는 사용할 수 없습니다.
+`multiplyBy31Description(int n)` 은 주어진 정수에 31을 곱한 결과를 반환합니다(예: `n=1` , 반환 `31` ; `n=2` , `62` 를 반환합니다. 오버플로 문제를 고려할 필요가 없습니다. 곱하기 기호( `*` ), 나눗셈 기호( `/` ), 더하기 기호( `+` )를 사용할 수 없습니다.
 
 `divideBy2ThenMinus1(int n)` 은 주어진 정수를 2로 나눈 다음 1을 뺀 결과를 반환합니다.
 
@@ -421,7 +431,7 @@ Wenn Sie Hilfe benötigen, können Sie sich gerne der [Discord Community](https:
 
 `n=4` , `4/2=2` , `2-1=1` 이므로 1을 반환합니다.
 
-곱하기 기호( `*` ), 나눗셈 기호( `/` ), 더하기 기호( `+` )는 사용할 수 없습니다.
+곱하기 기호( `*` ), 나눗셈 기호( `/` ), 더하기 기호( `+` )를 사용할 수 없습니다.
 
 -   아래 방법을 통해 이 챌린지를 완료할 수 있습니다.
     -   초보자에게 권장: `git clone https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators` 를 실행하여 코드를 다운로드하고 로컬 IDE에서 챌린지를 완료한 다음 답을 복사/붙여넣기/제출합니다. 웹 에디터.
@@ -445,7 +455,8 @@ Wenn Sie Hilfe benötigen, können Sie sich gerne der [Discord Community](https:
 <details>
 <summary>Italiano</summary>
 
-### Moltiplicazione e Divisione con Operatori Bitwise
+Moltiplicazione e Divisione con Operatori Bitwise
+-------------------------------------------------
 
 Completare i metodi `multiplyBy31()` e `divideBy2ThenMinus1()` in [src/main/java/com/bytelegend/Challenge.java](https://github.com/ByteLegendQuest/java-multiply-divide-with-bitwise-operators/blob/main/src/main/java/com/bytelegend/Challenge.java) \`.
 
