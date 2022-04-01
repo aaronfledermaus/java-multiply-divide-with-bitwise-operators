@@ -16,7 +16,8 @@ public class Challenge {
      * you are not allowed to use multiplication sign (`*`), division sign (`/`), and addition sign
      * (`+`).
      */
-    public static int multiplyBy31(int b) {
+    public static int multiplyBy31(int n) {
+        int b = n;
         boolean minus = false;
         if (b < 0) {
             minus = true;
@@ -30,7 +31,7 @@ public class Challenge {
             //处理当前位
             //当前位是1
             if ((b & 1) == 1) {
-                res += (base << i);
+                res += base << i;
                 b = b >> 1;
                 //记录当前是第几位
                 i++;
@@ -61,7 +62,8 @@ public class Challenge {
         return subtraction(division(n, 2), 1);
     }
 
-    private static int division(int a, int b) {
+    private static int division(int n, int b) {
+        int a = n;
         boolean minus = false;
         if (a < 0) {
             minus = true;
@@ -84,7 +86,8 @@ public class Challenge {
         return add(a, b);
     }
 
-    private static int add(int a, int b) {
+    private static int add(int n, int b) {
+        int a = n;
         //进位值
         int carry;
         while (b != 0) {
