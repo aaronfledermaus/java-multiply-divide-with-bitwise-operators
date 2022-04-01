@@ -82,7 +82,7 @@ public class Challenge {
     }
 
     private static int subtraction(int a, int b) {
-        b = ~b + 1;
+        b = add(~b, 1);
         return add(a, b);
     }
 
