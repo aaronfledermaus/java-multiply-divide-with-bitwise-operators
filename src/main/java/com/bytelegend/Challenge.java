@@ -73,7 +73,7 @@ public class Challenge {
         if (a < b) {
             return 0;
         } else {
-            res = division(subtraction(a, b), b) + 1;
+            res = add(division(subtraction(a, b), b), 1);
         }
         if (minus) {
             return add(~res, 1);
