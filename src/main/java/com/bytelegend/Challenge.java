@@ -33,12 +33,13 @@ public class Challenge {
      */
     public static int divideBy2ThenMinus1(int n) {
         if (n < 0) {
-            if (n % 2 ==0) {
+            if (n % 2 == 0) {
                 return (n >> 1) - 1;
             } else {
                 return n >> 1;
             }
-            return (n >> 1) - 1;
         }
+            return (n >> 1) - 1;
+        
     }
 }
