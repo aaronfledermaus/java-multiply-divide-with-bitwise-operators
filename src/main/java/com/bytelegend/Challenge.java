@@ -40,6 +40,5 @@ public class Challenge {
             }
         }
             return (n >> 1) - 1;
-        
     }
 }
