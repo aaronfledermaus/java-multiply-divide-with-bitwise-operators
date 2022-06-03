@@ -17,21 +17,71 @@ public class Challenge {
      * (`+`).
      */
     public static int multiplyBy31(int n) {
-        return 0;
+        return mult(n, 31);
     }
 
-    /**
-     * `divideBy2ThenMinus1(int n)` returns the result of a given integer dividing by 2, then minus
-     * 1.
-     *
-     * <p>For example, `n=1`, return `-1`, because `1/2=0`, `0-1=-1`.
-     *
-     * <p>`n=4`, return 1, because `4/2=2`, `2-1=1`.
-     *
-     * <p>Note that you are not allowed to use multiplication sign (`*`), division sign (`/`), and
-     * addition sign (`+`).
-     */
+    static int divide(int a, int b) {
+        int tempA = a;
+        int finalMult = 1;
+        if (a < 0) {
+            tempA = minus(0, a);
+            finalMult = -1;
+        }
+        int out = 0;
+        int divProd = 0;
+        int diff = minus(tempA, divProd);
+        while (diff >= b) {
+            divProd += b;
+            out++;
+            diff = minus(tempA, divProd);
+        }
+        if (finalMult == -1) {
+            out = minus(0, out);
+        }
+        return out;
+    }
+
+    static int divideByTwo(int a) {
+        return divide(a, 2);
+    }
+
+    static int minus(int a, int b) {
+        int out = a ^ b;
+        int carry = ((~a) & b) << 1;
+        while (carry != 0) {
+            int nextOut = out ^ carry;
+            carry = (~out & carry) << 1;
+            out = nextOut;
+        }
+        return out;
+    }
+
+    static int minusOne(int a) {
+        return minus(a, 1);
+    }
+
     public static int divideBy2ThenMinus1(int n) {
-        return 0;
+        return minusOne(divideByTwo(n));
+    }
+    
+    static int add(int a, int b) {
+        int out = a ^ b;
+        int carry = (a & b) << 1;
+        while (carry != 0) {
+            int nextOut = out ^ carry;
+            carry = (out & carry) << 1;
+            out = nextOut;
+        }
+        return out;
+
+    }
+
+    static int mult(int a, int b) {
+        int out = 0;
+        for (int i = 0; i < b; i++) {
+            out = add(out, a);
+        }
+
+        return out;
     }
 }
