@@ -36,7 +36,7 @@ public class Challenge {
         if (n < 0 && Math.abs(n % 2) != 0)
             return n >> 1;
         else {
-            return (n << 1) - 1;
+            return (n >> 1) - 1;
         }
     }
 }
