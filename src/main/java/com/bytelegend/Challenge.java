@@ -27,8 +27,9 @@ public class Challenge {
      * you are not allowed to use multiplication sign (`*`), division sign (`/`), and addition sign
      * (`+`).
      */
+    static int sum = 0;
     public static int multiplyBy31(int n) {
-        int sum = 0;
+        sum=0;
         for (int i = 1; i <= n; i++) {
             sum = add(sum, 31);
         }
