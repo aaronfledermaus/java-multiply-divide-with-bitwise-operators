@@ -12,10 +12,9 @@ public class Challenge {
 
     public static int add(int a, int b) {
         int sum = a;
-        int z = b;
-        while (z != 0) {
-            sum = a ^ z;    //将a，b两值不带进位相加
-            z = (a & z) << 1; //b更新为进位的值
+        while (b != 0) {
+            sum = a ^ b;    //将a，b两值不带进位相加
+            b = (a & b) << 1; //b更新为进位的值
             a = sum;   //a更新为不带进位的相加值
         }
         return sum;
@@ -30,7 +29,6 @@ public class Challenge {
      */
     public static int multiplyBy31(int n) {
         int sum = 0;
-        if(n==0) return -1;
         for (int i = 1; i <= n; i++) {
             sum = add(sum, 31);
         }
@@ -68,7 +66,12 @@ public class Challenge {
     public static boolean isNegtive(int num) {
         return num < 0;
     }
-
+    /**
+     *    减法
+     */
+    private static int Minus(int a, int b) {
+        return add(a, add(~b, 1));
+    }
     /**
      * `divideBy2ThenMinus1(int n)` returns the result of a given integer dividing by 2, then minus
      * 1.
@@ -82,6 +85,6 @@ public class Challenge {
      */
     public static int divideBy2ThenMinus1(int n) {
 
-        return divide(n, 2) - 1;
+        return Minus(divide(n, 2),1);
     }
 }
