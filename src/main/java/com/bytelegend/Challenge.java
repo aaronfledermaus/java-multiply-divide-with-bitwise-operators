@@ -27,14 +27,35 @@ public class Challenge {
      * you are not allowed to use multiplication sign (`*`), division sign (`/`), and addition sign
      * (`+`).
      */
-    static int sum = 0;
-    public static int multiplyBy31(int n) {
-        sum=0;
-        for (int i = 1; i <= n; i++) {
-            sum = add(sum, 31);
-        }
 
-        return sum;
+    public static int multiplyBy31(int n) {
+        return multi(n, 31);
+    }
+
+    //乘法
+    private static int multi(int a, int b) {
+        //将乘数和被乘数都取绝对值　
+        int multiplicand = a < 0 ? add(~a, 1) : a;
+        int multiplier = b < 0 ? add(~b, 1) : b;
+
+        int res = 0;
+        // 判断multiplier 任何数*0=0
+        while (multiplier != 0) {
+            //判断 multiplier 是不是 奇数
+            if ((multiplier & 1) != 0) {
+                // 如果是奇数 则加上一次multiplicand本身
+                res = add(res, multiplicand);
+            }
+            // multiplicand * 2
+            multiplicand <<= 1;
+            // multiplier  / 2
+            multiplier >>>= 1;
+        }
+        //计算乘积的符号　　
+        if ((a ^ b) < 0) {
+            res = add(~res, 1);
+        }
+        return res;
     }
 
     public static int divide(int a, int b) {
@@ -67,12 +88,14 @@ public class Challenge {
     public static boolean isNegtive(int num) {
         return num < 0;
     }
+
     /**
-     *    减法
+     * 减法
      */
     private static int Minus(int a, int b) {
         return add(a, add(~b, 1));
     }
+
     /**
      * `divideBy2ThenMinus1(int n)` returns the result of a given integer dividing by 2, then minus
      * 1.
@@ -86,6 +109,6 @@ public class Challenge {
      */
     public static int divideBy2ThenMinus1(int n) {
 
-        return Minus(divide(n, 2),1);
+        return Minus(divide(n, 2), 1);
     }
 }
