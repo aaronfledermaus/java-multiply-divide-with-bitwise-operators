@@ -1,5 +1,7 @@
 package com.bytelegend;
 
+import java.lang.Math;
+
 public class Challenge {
     public static void main(String[] args) {
         System.out.println(multiplyBy31(0));
@@ -17,7 +19,15 @@ public class Challenge {
      * (`+`).
      */
     public static int multiplyBy31(int n) {
-        return 0;
+        int number = 31;
+        int result = 0;
+        if (n == 0) {
+            return 0;
+        }
+        for (int i = 0; i < Math.abs(n); i++) {
+            result -= number;
+        }
+        return n < 0 ? result : -result;
     }
 
     /**
@@ -32,6 +42,12 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        return 0;
+        if (n % 2 == 0) {
+            return (n >> 1) - 1;
+        }
+        if (n < 0) {
+            return (n >> 1);
+        }
+        return ((n - 1) >> 1) - 1;
     }
 }
