@@ -24,7 +24,7 @@ public class Challenge {
         if (n == 0) {
             return 0;
         }
-        for (int i=0; i < Math.abs(n); i++) {
+        for (int i = 0; i < Math.abs(n); i++) {
             result -= number;
         }
         return n < 0 ? result : -result;
@@ -42,6 +42,12 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        return (n >> 1) - 1;
+        if (n % 2 == 0) {
+            return (n >> 1) - 1;
+        }
+        if (n < 0) {
+            return ((n + 1) >> 1) - 1;
+        }
+        return ((n - 1) >> 1) - 1;
     }
 }
