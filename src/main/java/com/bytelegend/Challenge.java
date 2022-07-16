@@ -17,7 +17,7 @@ public class Challenge {
      * (`+`).
      */
     public static int multiplyBy31(int n) {
-        return (n << 5) - n;
+        return 0;
     }
 
     /**
@@ -32,11 +32,6 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        int tmp = n >> 1;
-        if (n < 0 && n % 2 != 0) {
-        } else {
-            tmp -= 1;
-        }
-        return tmp;
+        return 0;
     }
 }
