@@ -35,6 +35,6 @@ public class Challenge {
         if (n <= 0) {
             return n % 2 == 0 ? (n >> 1) - 1 : n >> 1;
         }
-        return n % 2 == 0 ? n >> 1 : (n >> 1) - 1;
+        return (n >> 1) - 1;
     }
 }
