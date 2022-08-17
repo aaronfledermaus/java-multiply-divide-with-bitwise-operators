@@ -17,27 +17,7 @@ public class Challenge {
      * (`+`).
      */
     public static int multiplyBy31(int n) {
-        int num = 31;
-        int result = 0;
-        while (n != 0) {
-            if ((n & 1) == 1) {
-                result = add(result, num);
-            }
-            num <<= 1;
-            n >>>= 1;
-        }
-        return result;
-    }
-
-    public static int add(int a, int b) {
-        int res = a ^ b;
-        int carry = (a & b) << 1;
-        while (carry != 0) {
-            int temp = res;
-            res = res ^ carry;
-            carry = (temp & carry) << 1;
-        }
-        return res;
+        return 0;
     }
 
     /**
@@ -52,6 +32,6 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        return n >= 0 ? (n >> 1) - 1 : ((n & 1) == 1 ? (n >> 1) : (n >> 1) - 1);
+        return 0;
     }
 }
