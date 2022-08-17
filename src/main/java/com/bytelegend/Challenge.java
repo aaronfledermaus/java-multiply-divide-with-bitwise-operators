@@ -21,7 +21,7 @@ public class Challenge {
         int count = n;
         int result = 0;
         while (count != 0) {
-            if ((n & 1) == 1) {
+            if ((count & 1) == 1) {
                 result = add(result, num);
             }
             num <<= 1;
