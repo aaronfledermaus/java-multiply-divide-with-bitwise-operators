@@ -16,15 +16,8 @@ public class Challenge {
      * you are not allowed to use multiplication sign (`*`), division sign (`/`), and addition sign
      * (`+`).
      */
-     public static int multiplyBy31(int n) {
-        int x = n;
-        if(n == 0){
-            return 0;
-        }
-        for(int i = 0;i < 5;i++){
-            n <<= 1;
-        }
-        return n - x;
+    public static int multiplyBy31(int n) {
+        return 0;
     }
 
     /**
@@ -39,17 +32,6 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        int x;
-        if (n > 0) {
-            n >>= 1;
-            x = n - 1;
-        } else {
-            n--;
-            x = ~n;
-            x >>= 1;
-            x++;
-            x = 0 - x;
-        }
-        return x;
+        return 0;
     }
 }
