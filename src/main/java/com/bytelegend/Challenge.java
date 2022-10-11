@@ -33,9 +33,9 @@ public class Challenge {
      */
     public static int divideBy2ThenMinus1(int n) {
         if (n < 0) {
-            System.out.println(-(-n >> 1) - 1);
+            return -(-n >> 1) - 1;
         } else {
-            System.out.println((n >> 1) - 1);
+            return (n >> 1) - 1;
         }
     }
 }
