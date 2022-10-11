@@ -32,6 +32,10 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        return (n >> 1) - 1;
+        if (n < 0) {
+            System.out.println(-(-n >> 1) - 1);
+        } else {
+            System.out.println((n >> 1) - 1);
+        }
     }
 }
