@@ -34,9 +34,9 @@ public class Challenge {
     public static int divideBy2ThenMinus1(int n) {
         int mod = Math.floorMod(n, 2);
         int div = Math.floorDiv(n, 2);
-        if (n > 0) {
+        if (n > 1) {
             div = Math.subtractExact(div, mod);
-        } else if (n < 0) {
+        } else if (n < 1) {
             div = Math.addExact(div, mod);
         }
         System.out.println(n);
