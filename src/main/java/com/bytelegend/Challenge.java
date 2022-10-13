@@ -17,7 +17,7 @@ public class Challenge {
      * (`+`).
      */
     public static int multiplyBy31(int n) {
-        return Math.multiplyExact(n, 31);
+        return Math.multiplyExact(n, 31); 
     }
 
     /**
