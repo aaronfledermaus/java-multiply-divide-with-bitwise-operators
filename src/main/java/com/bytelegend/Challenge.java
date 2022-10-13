@@ -32,7 +32,14 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        System.out.println(n);
-        return Math.subtractExact(Math.floorDiv(n, 2), 1);
+        int mod = Math.floorMod(n, 2);
+        int div = Math.floorDiv(n, 2);
+        if (n > 0) {
+            div = Math.subtractExact(div, mod);
+        } else if (n < 0) {
+            div = Math.addExact(div, mod);
+        }
+
+        return Math.subtractExact(div, 1);
     }
 }
