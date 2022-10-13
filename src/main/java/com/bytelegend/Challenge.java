@@ -39,7 +39,7 @@ public class Challenge {
         } else if (n < 0) {
             div = Math.addExact(div, mod);
         }
-
+        System.out.println(n);
         return Math.subtractExact(div, 1);
     }
 }
