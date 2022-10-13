@@ -32,7 +32,7 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        System.out.println(divideBy2ThenMinus1("1234:" + n));
+        System.out.println(divideBy2ThenMinus1(n));
         return Math.subtractExact(Math.floorDiv(n, 2), 1);
     }
 }
