@@ -32,6 +32,6 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        return Math.subtractExact(Math.floorMod(n, 2) , 1);
+        return Math.subtractExact(Math.floorMod(n, 2), 1);
     }
 }
