@@ -17,7 +17,7 @@ public class Challenge {
      * (`+`).
      */
     public static int multiplyBy31(int n) {
-        return Math.multiplyExact(n, 31); 
+        return 0;
     }
 
     /**
@@ -32,12 +32,6 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        int mod = Math.floorMod(n, 2);
-        int div = Math.floorDiv(n, 2);
-        if (mod > 0 && div < 0) {
-            div = Math.addExact(div, mod);
-        }
-        System.out.println(n);
-        return Math.subtractExact(div, 1);
+        return 0;
     }
 }
