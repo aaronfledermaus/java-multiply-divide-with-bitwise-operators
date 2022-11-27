@@ -17,7 +17,7 @@ public class Challenge {
      * (`+`).
      */
     public static int multiplyBy31(int n) {
-        return 0;
+        return (n << 5) - n; // 转换为二进制理解
     }
 
     /**
@@ -32,6 +32,6 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        return 0;
+        return n < 0 ? -(Math.abs(n) >> 1) - 1 : ((n >> 1) - 1);
     }
 }
