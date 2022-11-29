@@ -103,7 +103,7 @@ public class Challenge {
     }
     private static int negative(int num)
     {
-        return add(~num, 1);
+        return add(~num, 1); 
     }
 
 }
