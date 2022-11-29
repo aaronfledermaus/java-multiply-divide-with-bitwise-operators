@@ -4,6 +4,8 @@ public class Challenge {
     public static void main(String[] args) {
 //        System.out.println(add(12,12));
 
+//        System.out.println(divideBy2ThenMinus1(6));
+
         System.out.println(multiplyBy31(0));
         System.out.println(multiplyBy31(1));
         System.out.println(multiplyBy31(5));
@@ -12,17 +14,9 @@ public class Challenge {
         System.out.println(divideBy2ThenMinus1(7));
     }
 
-    private static int add(Integer a, Integer b) {
 
-        Integer sum = a;
-        while (b != 0) {
-            //a与b无进位相加
-            sum = a ^ b;
-            b = (a & b) << 1;
-            a = sum;
-        }
-        return sum;
-    }
+
+
 
 
     /**
@@ -32,30 +26,7 @@ public class Challenge {
      * (`+`).
      */
     public static int multiplyBy31(int n) {
-
-            //将乘数和被乘数都取绝对值　
-            int multiplicand = 31;
-            int multiplier = n < 0 ? add(~n, 1) : n;
-
-            int res = 0;
-            // 判断multiplier 任何数*0=0
-            while (multiplier != 0) {
-                //判断 multiplier 是不是 奇数
-                if ((multiplier & 1) != 0) {
-                    // 如果是奇数 则加上一次multiplicand本身
-                    res = add(res, multiplicand);
-                }
-                // multiplicand * 2
-                multiplicand <<= 1;
-                // multiplier  / 2
-                multiplier >>>= 1;
-            }
-            //计算乘积的符号　　
-            if ((31 ^ n) < 0) {
-                res = add(~res, 1);
-            }
-            return res;
-
+        return multi(31,n);
     }
 
     /**
@@ -70,40 +41,83 @@ public class Challenge {
      * addition sign (`+`).
      */
     public static int divideBy2ThenMinus1(int n) {
-        // 先取被除数和除数的绝对值
-        int dividend = n > 0 ? n : add(~n, 1);
-        int divisor = 2;
-        int quotient = 0;// 商
-        int remainder = 0;// 余数
-        for(int i = 31; i >= 0; i--) {
-            // 比较dividend是否大于divisor的(1<<i)次方，不要将dividend与(divisor<<i)比较，
-            // 而是用(dividend>>i)与divisor比较，
-            // 效果一样，但是可以避免因(divisor<<i)操作可能导致的溢出，
-            // 如果溢出则会可能dividend本身小于divisor，但是溢出导致dividend大于divisor
-            if((dividend >> i) >= divisor) {
-                quotient = add(quotient, 1 << i);
-                dividend = minus(dividend, divisor << i);
-            }
-        }
-        // 确定商的符号
-        if((n ^ 2) < 0){
-            // 如果除数和被除数异号，则商为负数
-            quotient = add(~quotient, 1);
-        }
-        // 确定余数符号
-        remainder = 2 > 0 ? dividend : add(~dividend, 1);
-        System.out.println("余数："+ remainder);
+        return minus(sub(n,2),1);
 
-        quotient = minus(quotient, 1);
-        // 返回商
-        return quotient;
     }
-    private static int minus(int a, int b) {
+
+    public static int sub(int a, int b) {
+        // 先获取负数的个数
+        int negativeCount = negativeCount(a, b);
+        // 负数转正数进行计算
+        a = abs(a);
+        b = abs(b);
+        int res;
+        if (a < b) {
+            return 0;
+        } else {
+            res = add(sub(minus(a, b), b), 1);
+        }
+        if (negativeCount == 1) {
+            // 转为负数
+            res = negative(res);
+        }
+        return res;
+    }
+
+
+    public static int negativeCount(int a, int b) {
+        int count = 0;
+        if (a < 0) {
+            count = add(count, 1);
+        }
+        if (b < 0) {
+            count = add(count, 1);
+        }
+        return count;
+    }
+
+
+    public static int multi(int a, int b) {
+        // 先获取负数的个数
+        int negativeCount = negativeCount(a, b);
+        // 负数转正数进行计算
+        a = abs(a);
+        b = abs(b);
+        int i = 0;
+        int res = 0;
+        // 乘数为0则结束
+        while (b != 0) {
+            // 处理乘数当前位
+            if ((b & 1) == 1) {
+                res = add(res, a << i);
+            }
+            b = b >> 1;
+            i = add(i, 1);
+        }
+        if (negativeCount == 1) {
+            // 转为负数
+            res = negative(res);
+        }
+        return res;
+    }
+    public static int abs(int num) {
+        if (num < 0) {
+            num = minus(0, num);
+        }
+        return num;
+    }
+    public static int minus(int a, int b) {
         return add(a, negative(b));
     }
-    private static int negative(int num)
-    {
-        return add(~num, 1); 
+    public static int negative(int num) {
+        return add(~num, 1);
+    }
+    public static int add(int a, int b) {
+        // 得到原位和
+        int xor = a ^ b;
+        // 得到进位和
+        int forWoad = (a & b) << 1;
+        return forWoad == 0 ? xor : add(xor, forWoad);
     }
 
 }
