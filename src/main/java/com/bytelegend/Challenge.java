@@ -17,7 +17,7 @@ public class Challenge {
      * (`+`).
      */
     public static int multiplyBy31(int n) {
-        return n<<5-n;
+        return (n<<5)-n;
     }
 
     /**
@@ -35,6 +35,6 @@ public class Challenge {
         if(n%2!=0&&n<0)
             return n>>1;
         else
-            return n>>1-1;
+            return (n>>1)-1;
     }
 }
